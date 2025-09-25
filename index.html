@@ -1,13 +1,1711 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event.app - Event Management</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+<div style="position: relative; background: #444444">
+  <div style="width: 1920px; padding-top: 45px; left: 100px; top: 100px; position: absolute; background: var(--color-white-solid, white); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    <div style="align-self: stretch; min-height: 1200px; padding-left: 256px; background: var(--color-grey-98, #F9FAFB); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+      <div style="align-self: stretch; padding: 32px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 32px; display: flex">
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+          <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 24px; font-family: Inter; font-weight: 700; line-height: 32px; word-wrap: break-word">Discover Events</div>
+          </div>
+          <div style="align-self: stretch; padding-top: 17px; padding-bottom: 33px; padding-left: 17px; padding-right: 17px; background: var(--color-grey-97, #EFF6FF); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); border-radius: 8px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="align-self: stretch; height: 40px; position: relative; background: var(--color-white-solid, white); overflow: hidden; border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px">
+                  <div style="height: 17px; padding-top: 1px; padding-bottom: 2px; padding-right: 1208.38px; left: 41px; top: 11.50px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Search for events or locations...</div>
+                  </div>
+                  <div style="width: 1404.16px; height: 17px; left: 41px; top: 11.50px; position: absolute"></div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Filters</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="flex: 1 1 0; align-self: stretch; background: var(--color-grey-90, #E5E5E6); border-radius: 9999px; justify-content: center; align-items: center; display: flex">
+                    <div style="flex: 1 1 0; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">S</div>
+                  </div>
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Sarah Wilson</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Summer Music Festival 2024</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Join us for an unforgettable night of live music featuring top artists from around the world. Food trucks, art installations, and more!</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Monday, July 15, 2024 at 6:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Central Park, New York</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$45 - $120</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">247</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">18</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Jessica Davis</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">AI & Future Tech Conference</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Explore the latest in artificial intelligence, machine learning, and emerging technologies with industry leaders and innovators.</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Monday, July 22, 2024 at 9:00 AM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Javits Center, NYC</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$89 - $299</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">156</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">12</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Mike Chen</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Brooklyn Food & Wine Festival</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Taste the best of Brooklyn's culinary scene with over 50 local restaurants, craft breweries, and wine makers.</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Sunday, July 28, 2024 at 12:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Brooklyn Bridge Park</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$35 - $85</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">189</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">24</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="flex: 1 1 0; align-self: stretch; background: var(--color-grey-90, #E5E5E6); border-radius: 9999px; justify-content: center; align-items: center; display: flex">
+                    <div style="flex: 1 1 0; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">S</div>
+                  </div>
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Sarah Wilson</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Jazz Night at Blue Note</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Experience the best of contemporary jazz with local and international artists in an intimate setting.</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Monday, August 5, 2024 at 8:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Blue Note Jazz Club, NYC</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$35 - $60</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">78</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">15</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="flex: 1 1 0; align-self: stretch; background: var(--color-grey-90, #E5E5E6); border-radius: 9999px; justify-content: center; align-items: center; display: flex">
+                    <div style="flex: 1 1 0; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">S</div>
+                  </div>
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Sarah Wilson</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Pop Music Concert Series</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Top 40 hits and emerging pop artists perform live. Dance, sing along, and enjoy the energy!</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Saturday, August 10, 2024 at 7:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Madison Square Garden</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$75 - $250</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">234</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">45</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Mike Chen</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Country Music BBQ Festival</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Country music, BBQ, and good times! Features both classic and modern country artists.</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Thursday, August 15, 2024 at 4:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Brooklyn Mirage, NYC</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$40 - $90</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">145</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">32</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Mike Chen</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 100%; height: 256px; max-width: 1600px; position: relative"></div>
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Authentic Italian Food Festival</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Taste authentic Italian cuisine from various regions. Pasta, pizza, gelato, and more!</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Tuesday, August 20, 2024 at 12:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Little Italy, Manhattan</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$25 - $60</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">167</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">28</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Mike Chen</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Mexican Street Food Fiesta</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Experience the vibrant flavors of Mexican street food with live mariachi music and dancing.</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Sunday, August 25, 2024 at 5:00 PM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Corona Park, Queens</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$20 - $45</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">198</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">41</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="flex: 1 1 0; align-self: stretch; background: var(--color-grey-90, #E5E5E6); border-radius: 9999px; justify-content: center; align-items: center; display: flex">
+                    <div style="flex: 1 1 0; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 24px; word-wrap: break-word">S</div>
+                  </div>
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Sarah Wilson</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Today's Workshop</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">A workshop happening today</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Friday, September 12, 2025 at 1:25 AM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Community Center</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Free</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">12</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="align-self: stretch; padding: 1px; background: var(--color-white-solid, white); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); overflow: hidden; border-radius: 12px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 16px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="justify-content: flex-start; align-items: center; display: flex">
+                <div style="width: 40px; height: 40px; overflow: hidden; border-radius: 9999px; justify-content: center; align-items: flex-start; display: flex">
+                  <img style="flex: 1 1 0; align-self: stretch; max-width: 40px; position: relative" src="https://placehold.co/40x40" />
+                </div>
+                <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Mike Chen</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #6B7280); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">9/12/2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="height: 36px; padding-left: 12px; padding-right: 12px; border-radius: 6px; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; height: 16px; position: relative">
+                  <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <img style="width: 100%; height: 256px; max-width: 1600px; position: relative" src="https://placehold.co/1598x256" />
+            <div style="align-self: stretch; padding: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+              <div style="align-self: stretch; padding-bottom: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 18px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">Tomorrow's Networking Event</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Professional networking event</div>
+                </div>
+              </div>
+              <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Saturday, September 13, 2025 at 1:25 AM</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 10.67px; height: 13.33px; left: 2.67px; top: 1.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                        <div style="width: 4px; height: 4px; left: 6px; top: 4.67px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Business District</div>
+                  </div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; display: inline-flex">
+                  <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                      <div style="width: 16px; flex: 1 1 0; position: relative">
+                        <div style="width: 13.33px; height: 9.33px; left: 1.33px; top: 3.33px; position: absolute; outline: 1.33px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.67px"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">$25</div>
+                  </div>
+                </div>
+              </div>
+              <div style="align-self: stretch; padding-top: 13px; border-top: 1px var(--color-grey-96, #F3F4F6) solid; justify-content: space-between; align-items: center; display: inline-flex">
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: flex-start; align-items: center; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 13.33px; height: 12px; left: 1.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">34</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 12.67px; height: 12.67px; left: 1.33px; top: 1.99px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                        <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">8</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 4px; height: 4px; left: 10px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 2px; top: 6px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4px; height: 4px; left: 10px; top: 10.67px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 9.01px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                            <div style="width: 4.55px; height: 2.65px; left: 5.73px; top: 4.34px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Share</div>
+                    </div>
+                  </div>
+                  <div style="padding-left: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="justify-content: flex-start; align-items: center; display: inline-flex">
+                      <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                        <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                          <div style="width: 16px; flex: 1 1 0; position: relative">
+                            <div style="width: 13.33px; height: 13.33px; left: 1.33px; top: 1.33px; position: absolute; outline: 1.33px var(--color-azure-34, #4B5563) solid; outline-offset: -0.67px"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">More Info</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="height: 36px; padding-left: 13px; padding-right: 13px; padding-top: 1px; padding-bottom: 1px; background: var(--color-white-solid, white); border-radius: 6px; outline: 1px var(--color-grey-91, #E1E7EF) solid; outline-offset: -1px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                    <div style="width: 20px; height: 16px; padding-right: 4px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                      <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                        <div style="width: 16px; flex: 1 1 0; position: relative">
+                          <div style="width: 9.33px; height: 12px; left: 3.33px; top: 2px; position: absolute; outline: 1.33px var(--color-azure-8, #0F1419) solid; outline-offset: -0.67px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-8, #0F1419); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Save</div>
+                  </div>
+                  <div style="height: 36px; padding-left: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                    <div style="height: 36px; padding-left: 12px; padding-right: 12px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; display: inline-flex">
+                      <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Get Tickets</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 256px; padding-right: 1px; left: 0px; top: 0px; position: absolute; background: var(--color-white-solid, white); border-right: 1px var(--color-grey-91, #E1E7EF) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+      <div style="align-self: stretch; padding-top: 20px; padding-bottom: 16px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+        <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; justify-content: flex-start; align-items: center; display: inline-flex">
+          <div style="justify-content: flex-start; align-items: center; display: flex">
+            <div style="width: 32px; height: 32px; background: var(--color-blue-66, #5E65F3); border-radius: 8px; justify-content: center; align-items: center; display: flex">
+              <div style="width: 16px; height: 16px; position: relative">
+                <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-white-solid, white) solid; outline-offset: -0.67px"></div>
+              </div>
+            </div>
+            <div style="padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-11, #111827); font-size: 20px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">EventHub</div>
+            </div>
+          </div>
+        </div>
+        <div style="align-self: stretch; flex: 1 1 0; padding-top: 32px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="align-self: stretch; padding-left: 8px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div style="align-self: stretch; padding: 8px; background: var(--color-grey-98, #F9FAFB); border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 5px; height: 7.50px; left: 7.50px; top: 10px; position: absolute; outline: 1.67px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.83px"></div>
+                    <div style="width: 15px; height: 15.83px; left: 2.50px; top: 1.67px; position: absolute; outline: 1.67px var(--color-blue-66, #5E65F3) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-blue-66, #5E65F3); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Discover</div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 15px; height: 14.61px; left: 2.50px; top: 2.70px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Map</div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 15px; height: 15px; left: 2.50px; top: 3.33px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Calendar</div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 16.67px; height: 11.67px; left: 1.67px; top: 4.17px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">My Tickets</div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 11.67px; height: 5px; left: 1.67px; top: 12.50px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                    <div style="width: 6.67px; height: 6.67px; left: 4.17px; top: 2.50px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                    <div style="width: 2.50px; height: 4.89px; left: 15.83px; top: 12.61px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                    <div style="width: 2.51px; height: 6.46px; left: 13.33px; top: 2.61px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Friends</div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 15.84px; height: 15.84px; left: 1.67px; top: 2.49px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Messages</div>
+              <div style="flex: 1 1 0; min-width: 22.69px; padding-left: 104.77px; flex-direction: column; justify-content: flex-start; align-items: flex-end; display: inline-flex">
+                <div style="padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px; background: var(--color-red-60, #EF4444); border-radius: 9999px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 12px; font-family: Inter; font-weight: 400; line-height: 16px; word-wrap: break-word">3</div>
+                </div>
+              </div>
+            </div>
+            <div style="align-self: stretch; padding: 8px; border-radius: 6px; justify-content: flex-start; align-items: center; display: inline-flex">
+              <div style="width: 32px; height: 20px; padding-right: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+                <div style="width: 20px; height: 20px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                  <div style="width: 20px; flex: 1 1 0; position: relative">
+                    <div style="width: 11.67px; height: 5px; left: 4.17px; top: 12.50px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                    <div style="width: 6.67px; height: 6.67px; left: 6.67px; top: 2.50px; position: absolute; outline: 1.67px var(--color-azure-65, #9CA3AF) solid; outline-offset: -0.83px"></div>
+                  </div>
+                </div>
+              </div>
+              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-34, #4B5563); font-size: 14px; font-family: Inter; font-weight: 400; line-height: 20px; word-wrap: break-word">Profile</div>
+            </div>
+          </div>
+        </div>
+        <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: var(--color-blue-66, #5E65F3); border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <div style="width: 24px; height: 16px; padding-right: 8px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+              <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                <div style="width: 16px; flex: 1 1 0; position: relative">
+                  <div style="width: 4px; height: 12px; left: 10px; top: 2px; position: absolute; outline: 1.33px var(--color-white-solid, white) solid; outline-offset: -0.67px"></div>
+                  <div style="width: 3.33px; height: 6.67px; left: 6.67px; top: 4.67px; position: absolute; outline: 1.33px var(--color-white-solid, white) solid; outline-offset: -0.67px"></div>
+                </div>
+              </div>
+            </div>
+            <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Inter; font-weight: 700; line-height: 20px; word-wrap: break-word">Login</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 56px; height: 56px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; left: 1848px; top: 1128px; position: absolute; background: var(--color-blue-66, #5E65F3); box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.10); overflow: hidden; border-radius: 9999px; justify-content: center; align-items: center; display: inline-flex">
+      <div style="width: 16px; height: 16px; position: relative">
+        <div style="width: 12px; height: 12px; left: 2px; top: 2.67px; position: absolute; outline: 1.33px var(--color-white-solid, white) solid; outline-offset: -0.67px"></div>
+      </div>
+    </div>
+    <div style="padding-top: 8px; padding-bottom: 9px; padding-left: 16px; padding-right: 16px; left: 0px; top: 0px; position: absolute; background: var(--color-azure-25, #004182); box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); border-bottom: 1px var(--color-white--10%, rgba(255, 255, 255, 0.10)) solid; justify-content: flex-start; align-items: center; display: inline-flex">
+      <div style="padding-right: 1004.42px; justify-content: flex-start; align-items: flex-start; display: flex">
+        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Roboto; font-weight: 400; line-height: 21px; word-wrap: break-word">This is a temporary development preview, and these links are not for public use. </div>
+        <div style="justify-content: flex-start; align-items: flex-start; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Roboto; font-weight: 500; text-decoration: underline; line-height: 21px; word-wrap: break-word">Deploy your app</div>
+        </div>
+        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14px; font-family: Roboto; font-weight: 400; line-height: 21px; word-wrap: break-word"> for secure sharing or use an invite link.</div>
+      </div>
+      <div style="width: 40px; height: 28px; padding-left: 12px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+          <div style="width: 16px; height: 16px; position: relative">
+            <div style="width: 9.34px; height: 9.33px; left: 3.33px; top: 3.33px; position: absolute; background: var(--color-white--70%, rgba(255, 255, 255, 0.70))"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
